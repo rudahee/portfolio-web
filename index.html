@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="crt">
+    <div class="cursor"></div>
+    
+    <div class="container">
+        <div class="terminal-header">
+            <div class="ascii-art">
+██████╗  █████╗  ██████╗██╗  ██╗███████╗███╗   ██╗██████╗     ██████╗ ███████╗██╗   ██╗
+██╔══██╗██╔══██╗██╔════╝██║ ██╔╝██╔════╝████╗  ██║██╔══██╗    ██╔══██╗██╔════╝██║   ██║
+██████╔╝███████║██║     █████╔╝ █████╗  ██╔██╗ ██║██║  ██║    ██║  ██║█████╗  ██║   ██║
+██╔══██╗██╔══██║██║     ██╔═██╗ ██╔══╝  ██║╚██╗██║██║  ██║    ██║  ██║██╔══╝  ╚██╗ ██╔╝
+██████╔╝██║  ██║╚██████╗██║  ██╗███████╗██║ ╚████║██████╔╝    ██████╔╝███████╗ ╚████╔╝ 
+╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚═════╝     ╚═════╝ ╚══════╝  ╚═══╝  
+            </div>
+            <div style="text-align: center; color: #00ffff;">
+                Terminal Portfolio v2.1.3 | Backend Developer | Sistema iniciado...
+            </div>
+        </div>
+        
+        <div class="terminal-window">
+            <div id="terminal-content">
+                <div class="terminal-line">
+                    <span class="prompt">system@portfolio:~$</span>
+                    <span class="command">whoami</span>
+                </div>
+                <div class="terminal-line">
+                    <div class="output typewriter">
+Nombre: [Tu Nombre]
+Rol: Backend Developer & System Architect
+Status: { "available": <span id="availability-status">false</span>, "coffee_level": <span id="coffee-level">2.8</span>, "bugs_fixed_today": <span id="bugs-fixed">32</span> }
+                    </div>
+                </div>
+                
+                <div class="terminal-line">
+                    <span class="prompt">system@portfolio:~$</span>
+                    <span class="command">cat skills.json</span>
+                </div>
+                <div class="json-display">
+{
+    "languages": ["Java", "Python", "JavaScript", "SQL", "Bash"],
+    "frameworks": ["Spring Boot", "Node.js", "Express", "Hibernate"],
+    "databases": ["PostgreSQL", "MongoDB", "Redis", "MySQL"],
+    "tools": ["Docker", "Kubernetes", "Jenkins", "Git", "Maven"],
+    "cloud": ["AWS", "Azure", "Google Cloud"],
+    "architecture": ["Microservices", "REST APIs", "Event-driven", "SOLID"]
+}
+                </div>
+            </div>
+            
+            <div class="input-line">
+                <span class="prompt">system@portfolio:~$</span>
+                <input type="text" id="command-input" placeholder="Escribe 'help' para ver comandos disponibles..." autocomplete="off">
+                <span class="blink" id="custom-cursor">█</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="dynamic-counter.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
